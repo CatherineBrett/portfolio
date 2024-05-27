@@ -38,6 +38,8 @@ h6 {
   overflow-wrap: break-word;
 }
 
+/* https://coolors.co/visualizer/ff99c8-fcf6bd-d0f4de-a9def9-e4c1f9 */
+
 :root {
   --carnation-pink: hsla(332, 100%, 80%, 1);
   --lemon-chiffon: hsla(54, 91%, 86%, 1);

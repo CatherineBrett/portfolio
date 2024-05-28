@@ -113,6 +113,14 @@ a {
   text-decoration-color: var(--mauve);
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
 .xl-text {
   font-size: var(--xl-text);
 }
@@ -135,6 +143,21 @@ a {
 
 .bold {
   font-weight: 700;
+}
+
+.fe-icons i {
+  font-size: var(--large-text);
+  color: var(--mauve);
+}
+
+.be-icons i {
+  font-size: var(--large-text);
+  color: var(--uranian-blue);
+}
+
+.other-icons i {
+  font-size: var(--large-text);
+  color: var(--carnation-pink);
 }
 
 section {

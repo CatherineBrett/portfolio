@@ -58,6 +58,7 @@ https://www.rawkblog.com/2018/05/modular-scale-typography-with-css-variables-and
   --large-text: calc(var(--med-text) * var(--ratio));
   --xl-text: calc(var(--large-text) * var(--ratio));
   --small-spacing: 1rem;
+  --xs-spacing: calc(var(--small-spacing) * 0.75);
   --med-spacing: calc(var(--small-spacing) * 2.5);
   --large-spacing: calc(var(--med-spacing) * 2.5);
   --xl-spacing: calc(var(--large-spacing) * 2.5);
@@ -114,16 +115,19 @@ a {
 }
 
 ul {
+  padding-inline-start: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: var(--small-spacing);
 }
 
 li {
   display: flex;
   flex-direction: column;
   align-content: center;
+  gap: var(--xs-spacing);
+  margin-bottom: var(--xs-spacing);
 }
 
 i {

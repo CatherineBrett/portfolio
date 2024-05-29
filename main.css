@@ -82,6 +82,8 @@ header {
   top: 0;
   background-color: var(--portfolio-white);
   padding: var(--small-spacing) 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 main {
@@ -156,6 +158,10 @@ i {
 
 .bold {
   font-weight: 700;
+}
+
+.contact i {
+  font-size: var(--xl-text);
 }
 
 .fe-icons i {

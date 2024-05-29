@@ -103,7 +103,11 @@ h3 {
 }
 
 h2 {
-  margin-bottom: var(--med-spacing);
+  margin-bottom: var(--small-spacing);
+}
+
+h3 {
+  margin: var(--med-spacing) 0 var(--small-spacing) 0;
 }
 
 p,
@@ -171,7 +175,7 @@ i {
 }
 
 .contact i {
-  font-size: var(--xl-text);
+  font-size: var(--large-text);
 }
 
 .fe-icons i {
@@ -195,6 +199,10 @@ section {
 
 article {
   margin-bottom: var(--med-spacing);
+}
+
+.project-name {
+  color: var(--uranian-blue);
 }
 
 .link-container {

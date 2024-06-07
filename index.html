@@ -297,8 +297,16 @@ Extended About Me statement - what led me to software engineering, what I am loo
             Project 4 (Solo)
             <span class="project-name">Harborne Community Groups</span>
           </h3>
-          <!-- TO-DO: Insert screenshot of Harborne Community Groups here -->
-          <picture> </picture>
+          <picture>
+            <source
+              srcset="/assets/hcg-desktop.png"
+              media="(min-width: 720px)"
+            />
+            <img
+              src="/assets/hcg-mobile.png"
+              alt="Harborne Community Groups screenshot"
+            />
+          </picture>
           <p>
             Built a full-stack “community groups” app over 8 business days (12
             in total), using a Python Flask API with Flask REST framework to

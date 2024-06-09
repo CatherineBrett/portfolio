@@ -127,6 +127,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--small-spacing);
+  z-index: 1;
 }
 
 nav {

@@ -73,8 +73,40 @@ body {
   padding: 0 var(--small-spacing);
 }
 
-.accent {
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-body {
+  display: flex;
+  gap: var(--med-spacing);
+}
+
+.project-image {
+  width: 60%;
+  aspect-ratio: 16/9;
+}
+
+.pink {
   color: var(--carnation-pink);
+}
+
+.blue {
+  color: var(--uranian-blue);
 }
 
 header {
@@ -208,4 +240,8 @@ article {
 .link-container {
   display: flex;
   gap: var(--small-spacing);
+}
+
+.subtitle {
+  display: block;
 }

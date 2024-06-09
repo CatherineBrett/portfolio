@@ -1,9 +1,6 @@
 <!-- NOTES: 
 Headshot/illustration?
-Fonts
-Colour schemes
-Links to email, GitHub, LinkedIn
-Extended About Me statement - what led me to software engineering, what I am looking for (full-time role, keen to learn more about backend development), interests, industry interests e.g. online resources, podcasts, coding courses etc., transferrable previous experience
+Extended About Me statement - what I am looking for (full-time role, keen to learn more about backend development), interests, industry interests e.g. online resources, podcasts, coding courses etc., more transferrable previous experience
 -->
 
 <!DOCTYPE html>
@@ -32,7 +29,7 @@ Extended About Me statement - what led me to software engineering, what I am loo
   <body>
     <header>
       <h1 class="med-text bold header-item">
-        Catherine Brett <span class="accent">Junior Software Engineer</span>
+        Catherine Brett <span class="pink">Junior Software Engineer</span>
       </h1>
       <nav class="contact header-item">
         <a href="https://github.com/CatherineBrett"
@@ -48,12 +45,14 @@ Extended About Me statement - what led me to software engineering, what I am loo
     </header>
     <main>
       <section>
+        <h2 class="xl-text">
+          Hi, I'm <span class="blue">Catherine</span> 👋<span class="subtitle"
+            >Welcome to my website 😁</span
+          >
+        </h2>
+      </section>
+      <section class="about">
         <h2 class="large-text">About Me</h2>
-        <p>
-          Hello there and welcome to my website
-          <span class="small-text">😁</span>
-        </p>
-
         <p>
           My name is Catherine and I am a mid-career changer who has accrued
           diverse experience in a variety of roles, including working for the
@@ -99,7 +98,7 @@ Extended About Me statement - what led me to software engineering, what I am loo
 
         <p>(More info re interests etc. to go in About Me section.)</p>
       </section>
-      <section>
+      <section class="experience">
         <h2 class="large-text">Experience</h2>
         <p>Some of the technologies I have experience with include:</p>
         <h3 class="med-text">Frontend</h3>
@@ -204,122 +203,144 @@ Extended About Me statement - what led me to software engineering, what I am loo
           </li>
         </ul>
       </section>
-      <section>
+      <section class="projects">
         <h2 class="large-text">Projects</h2>
         <p>
           I completed General Assembly's Software Engineering Bootcamp between
           January and April 2024. As part of the curriculum I built four
           projects which are outlined chronologically below:
         </p>
-        <article>
+        <article class="project">
           <h3 class="med-text">
             Project 1 (Solo) <span class="project-name">Frogger</span>
           </h3>
-          <picture>
-            <source
-              srcset="/assets/frogger-desktop.png"
-              media="(min-width: 720px)"
-            />
-            <img src="/assets/frogger-mobile.png" alt="Frogger screenshot" />
-          </picture>
-          <p>
-            Using DOM manipulation, I built a grid-based browser version of 80s
-            arcade game Frogger in HTML, CSS and JavaScript across 6 business
-            days (8 in total). My main challenges included animating the
-            obstacles and detecting collisions with my player character. My
-            stretch goals included a high score display and increasing the
-            difficulty as the game progresses.
-          </p>
-          <!-- TO-DO: Look into correct way to implement target="_blank" for security -->
-          <div class="link-container">
-            <a
-              href="https://github.com/CatherineBrett/SEB-Project-1/blob/main/README.md"
-              >README</a
-            ><a href="https://catherinebrett.github.io/SEB-Project-1/">Site</a>
+          <div class="project-body">
+            <picture class="project-image">
+              <source
+                srcset="/assets/frogger-desktop.png"
+                media="(min-width: 720px)"
+              />
+              <img src="/assets/frogger-mobile.png" alt="Frogger screenshot" />
+            </picture>
+            <div class="project-info">
+              <p>
+                Using DOM manipulation, I built a grid-based browser version of
+                80s arcade game Frogger in HTML, CSS and JavaScript across 6
+                business days (8 in total). My main challenges included
+                animating the obstacles and detecting collisions with my player
+                character. My stretch goals included a high score display and
+                increasing the difficulty as the game progresses.
+              </p>
+              <!-- TO-DO: Look into correct way to implement target="_blank" for security -->
+              <div class="link-container">
+                <a
+                  href="https://github.com/CatherineBrett/SEB-Project-1/blob/main/README.md"
+                  >README</a
+                ><a href="https://catherinebrett.github.io/SEB-Project-1/"
+                  >Site</a
+                >
+              </div>
+            </div>
           </div>
         </article>
-        <article>
+        <article class="project">
           <h3 class="med-text">
             Project 2 (Pair) <span class="project-name">Quiz App</span>
           </h3>
-          <picture>
-            <picture>
+          <div class="project-body">
+            <picture class="project-image">
               <source
                 srcset="/assets/quiz-desktop.png"
                 media="(min-width: 720px)"
               />
               <img src="/assets/quiz-mobile.png" alt="Quiz screenshot" />
             </picture>
-          </picture>
-          <p>
-            Produced a React quiz app with TypeScript over a two-day hackathon.
-            Our app consumed the Open Trivia public API, had a router with two
-            “pages”, and was styled using the Bulma CSS framework. We mostly
-            pair-programmed, taking turns as driver/navigator.
-          </p>
-          <!-- TO-DO: Implement target="_blank" correctly -->
-          <div class="link-container">
-            <a
-              href="https://github.com/CatherineBrett/SEB-Project-2/blob/main/README.md"
-              >README</a
-            ><a href="https://catherine-liv-project-2.netlify.app/">Site</a>
+            <div class="project-info">
+              <p>
+                Produced a React quiz app with TypeScript over a two-day
+                hackathon. Our app consumed the Open Trivia public API, had a
+                router with two “pages”, and was styled using the Bulma CSS
+                framework. We mostly pair-programmed, taking turns as
+                driver/navigator.
+              </p>
+              <!-- TO-DO: Implement target="_blank" correctly -->
+              <div class="link-container">
+                <a
+                  href="https://github.com/CatherineBrett/SEB-Project-2/blob/main/README.md"
+                  >README</a
+                ><a href="https://catherine-liv-project-2.netlify.app/">Site</a>
+              </div>
+            </div>
           </div>
         </article>
-        <article>
+        <article class="project">
           <h3 class="med-text">
             Project 3 (Group of 3)
             <span class="project-name">Bootcamp Buddy</span>
           </h3>
-          <picture>
-            <source
-              srcset="/assets/bb-desktop.png"
-              media="(min-width: 720px)"
-            />
-            <img src="/assets/bb-mobile.png" alt="Bootcamp Buddy screenshot" />
-          </picture>
-          <p>
-            Built a full-stack “bootcamp advice” app over one week, using
-            MongoDB, Express, React/TypeScript and Node.js. My contributions to
-            this group project included providing the concept, implementing UI,
-            writing some of the key logic for our CRUD functionality and
-            producing some of the form validation and error handling.
-          </p>
-          <!-- TO-DO: Implement target="_blank" correctly -->
-          <div class="link-container">
-            <a
-              href="https://github.com/CatherineBrett/project-3-backend/blob/main/README.md"
-              >README</a
-            ><a href="https://bootcamp-buddy.netlify.app/">Site</a>
+          <div class="project-body">
+            <picture class="project-image">
+              <source
+                srcset="/assets/bb-desktop.png"
+                media="(min-width: 720px)"
+              />
+              <img
+                src="/assets/bb-mobile.png"
+                alt="Bootcamp Buddy screenshot"
+              />
+            </picture>
+            <div class="project-info">
+              <p>
+                Built a full-stack “bootcamp advice” app over one week, using
+                MongoDB, Express, React/TypeScript and Node.js. My contributions
+                to this group project included providing the concept,
+                implementing UI, writing some of the key logic for our CRUD
+                functionality and producing some of the form validation and
+                error handling.
+              </p>
+              <!-- TO-DO: Implement target="_blank" correctly -->
+              <div class="link-container">
+                <a
+                  href="https://github.com/CatherineBrett/project-3-backend/blob/main/README.md"
+                  >README</a
+                ><a href="https://bootcamp-buddy.netlify.app/">Site</a>
+              </div>
+            </div>
           </div>
         </article>
-        <article>
+        <article class="project">
           <h3 class="med-text">
             Project 4 (Solo)
             <span class="project-name">Harborne Community Groups</span>
           </h3>
-          <picture>
-            <source
-              srcset="/assets/hcg-desktop.png"
-              media="(min-width: 720px)"
-            />
-            <img
-              src="/assets/hcg-mobile.png"
-              alt="Harborne Community Groups screenshot"
-            />
-          </picture>
-          <p>
-            Built a full-stack “community groups” app over 8 business days (12
-            in total), using a Python Flask API with Flask REST framework to
-            serve my data from a Postgres database. I built my frontend with
-            React/TypeScript. The project has CRUD functionality, with various
-            models and a mix of one-to-many and many-to-many relationships.
-          </p>
-          <!-- TO-DO: Implement target="_blank" correctly -->
-          <div class="link-container">
-            <a
-              href="https://github.com/CatherineBrett/project-4-backend/blob/main/README.md"
-              >README</a
-            ><a href="https://harbornecommunitygroups.netlify.app/">Site</a>
+          <div class="project-body">
+            <picture class="project-image">
+              <source
+                srcset="/assets/hcg-desktop.png"
+                media="(min-width: 720px)"
+              />
+              <img
+                src="/assets/hcg-mobile.png"
+                alt="Harborne Community Groups screenshot"
+              />
+            </picture>
+            <div class="project-info">
+              <p>
+                Built a full-stack “community groups” app over 8 business days
+                (12 in total), using a Python Flask API with Flask REST
+                framework to serve my data from a Postgres database. I built my
+                frontend with React/TypeScript. The project has CRUD
+                functionality, with various models and a mix of one-to-many and
+                many-to-many relationships.
+              </p>
+              <!-- TO-DO: Implement target="_blank" correctly -->
+              <div class="link-container">
+                <a
+                  href="https://github.com/CatherineBrett/project-4-backend/blob/main/README.md"
+                  >README</a
+                ><a href="https://harbornecommunitygroups.netlify.app/">Site</a>
+              </div>
+            </div>
           </div>
         </article>
       </section>

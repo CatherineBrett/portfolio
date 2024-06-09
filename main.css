@@ -74,11 +74,16 @@ body {
 }
 
 .intro {
-  /* height: 80vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--small-spacing);
+}
+
+.intro h2 {
+  text-align: center;
+  line-height: 1;
 }
 
 .about {
@@ -130,7 +135,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--portfolio-white);
-  padding: var(--med-spacing) 0;
+  padding: var(--small-spacing) 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -172,7 +177,8 @@ p {
   margin-bottom: var(--small-spacing);
 }
 
-.link-container a {
+.link-container a,
+.resources a {
   font-weight: 700;
   text-decoration-color: var(--mauve);
 }
@@ -265,12 +271,16 @@ article {
   display: none;
 }
 
-/* TO-DO: Make this into a "profile picture" */
 .head-peep {
-  display: none;
+  display: block;
+  width: 200px;
 }
 
 @media screen and (min-width: 820px) {
+  header {
+    padding: var(--med-spacing) 0;
+  }
+
   .project-body {
     flex-direction: row;
   }
@@ -292,6 +302,11 @@ article {
     align-items: center;
     justify-content: space-around;
     height: 80vh;
+  }
+
+  .intro h2 {
+    text-align: left;
+    line-height: 1.2;
   }
 
   .head-peep {

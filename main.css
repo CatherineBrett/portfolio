@@ -73,6 +73,14 @@ body {
   padding: 0 var(--small-spacing);
 }
 
+.intro {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -147,7 +155,7 @@ h3 {
 }
 
 h2 {
-  margin-bottom: var(--small-spacing);
+  margin-bottom: var(--med-spacing);
 }
 
 h3 {
@@ -257,6 +265,11 @@ article {
   display: none;
 }
 
+/* TO-DO: Make this into a "profile picture" */
+.head-peep {
+  display: none;
+}
+
 @media screen and (min-width: 820px) {
   .project-body {
     flex-direction: row;
@@ -275,10 +288,13 @@ article {
   }
 
   .intro {
-    height: 80vh;
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .head-peep {
+    display: none;
   }
 
   .peep {

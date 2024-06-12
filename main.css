@@ -97,10 +97,6 @@ body {
   flex-direction: column;
 }
 
-.experience h3 {
-  font-weight: 400;
-}
-
 .skills {
   margin-top: var(--med-spacing);
 }
@@ -230,6 +226,10 @@ i {
   font-size: var(--med-text);
 }
 
+/* .normal-text {
+  font-size: var(--text-size);
+} */
+
 .small-text {
   font-size: var(--small-text);
 }
@@ -260,6 +260,14 @@ i {
   font-size: var(--large-text);
   color: var(--carnation-pink);
 }
+
+/* .enlarge {
+  gap: none;
+}
+
+.enlarge i {
+  font-size: var(--xl-text);
+} */
 
 section {
   margin-bottom: var(--large-spacing);

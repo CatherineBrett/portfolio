@@ -150,8 +150,19 @@ header {
 
 nav {
   display: flex;
-  justify-content: start;
   gap: var(--small-spacing);
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--portfolio-white);
+  padding: var(--med-spacing) 0 var(--med-spacing) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--small-spacing);
+  z-index: 1;
 }
 
 main {
@@ -242,8 +253,12 @@ i {
   font-weight: 700;
 }
 
-.contact i {
+.header-contact i {
   font-size: var(--large-text);
+}
+
+.footer-contact i {
+  font-size: var(--small-text);
 }
 
 .fe-icons i {
@@ -298,6 +313,10 @@ article {
 @media screen and (min-width: 820px) {
   header {
     padding: var(--med-spacing) 0;
+  }
+
+  footer {
+    gap: var(--large-spacing);
   }
 
   li {

@@ -393,13 +393,3 @@ article {
     height: 80%;
   }
 }
-
-@media screen and (min-width: 920px) {
-  header {
-    gap: var(--med-spacing);
-  }
-
-  nav {
-    justify-content: end;
-  }
-}

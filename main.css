@@ -358,7 +358,6 @@ article {
 
   .project-body {
     flex-direction: row;
-    /* align-items: center; */
   }
 
   .project-info {
@@ -367,11 +366,6 @@ article {
 
   .project-info h3 {
     margin-top: 0;
-  }
-
-  .project-image {
-    width: 60%;
-    aspect-ratio: 16/9;
   }
 
   .about-copy {
@@ -400,5 +394,12 @@ article {
     display: block;
     transform: rotateY(180deg);
     height: 80%;
+  }
+}
+
+@media screen and (min-width: 1035px) {
+  .project-image {
+    width: 60%;
+    aspect-ratio: 16/9;
   }
 }

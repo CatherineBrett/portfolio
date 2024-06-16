@@ -94,6 +94,10 @@ body {
   flex-direction: column;
 }
 
+.about-copy p:last-of-type {
+  margin-bottom: 0;
+}
+
 .about-copy p > span {
   font-weight: 700;
   background-color: hsla(143, 62%, 89%, 0.7);
@@ -143,7 +147,6 @@ body {
 }
 
 .project-info > p > span {
-  /* color: var(--mauve); */
   font-weight: 700;
   background-color: var(--lemon-chiffon);
 }
@@ -212,7 +215,6 @@ h3 {
 }
 
 h4 {
-  margin-bottom: var(--xxs-spacing);
   font-size: var(--small-text);
 }
 
@@ -234,9 +236,14 @@ p.centered {
   margin-bottom: 0;
 }
 
-.link-container a {
+.link-container a,
+.link-container-desktop a {
   font-weight: 700;
   text-decoration-color: var(--mauve);
+}
+
+.link-container-desktop {
+  display: none;
 }
 
 ul {
@@ -277,10 +284,6 @@ i {
   font-size: var(--med-text);
 }
 
-/* .normal-text {
-  font-size: var(--text-size);
-} */
-
 .small-text {
   font-size: var(--small-text);
 }
@@ -315,14 +318,6 @@ i {
   font-size: var(--large-text);
   color: var(--carnation-pink);
 }
-
-/* .enlarge {
-  gap: none;
-}
-
-.enlarge i {
-  font-size: var(--xl-text);
-} */
 
 section {
   margin-bottom: var(--large-spacing);
@@ -361,7 +356,7 @@ article {
 
   footer {
     gap: var(--large-spacing);
-    padding: var(--med-spacing) 0 var(--sm-spacing) 0;
+    padding: var(--med-spacing) 0 var(--small-spacing) 0;
   }
 
   .header-contact {
@@ -392,7 +387,7 @@ article {
   .about-copy {
     column-width: 30ch;
     column-gap: var(--med-spacing);
-    column-rule: 1px solid var(--portfolio-black);
+    column-rule: 1px solid var(--nyanza);
   }
 
   .intro {
@@ -415,6 +410,15 @@ article {
     display: block;
     transform: rotateY(180deg);
     height: 80%;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .link-container-desktop {
+    display: flex;
+    gap: var(--small-spacing);
   }
 }
 

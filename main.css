@@ -133,8 +133,14 @@ body {
   max-width: 60ch;
 }
 
-.project-info h3 > span {
+.project-info > h3 > span {
   display: block;
+}
+
+.project-info > p > span {
+  /* color: var(--mauve); */
+  font-weight: 700;
+  background-color: var(--lemon-chiffon);
 }
 
 .pink {

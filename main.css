@@ -131,6 +131,10 @@ body {
   max-width: 60ch;
 }
 
+.project-info h3 > span {
+  display: block;
+}
+
 .pink {
   color: var(--carnation-pink);
 }
@@ -354,10 +358,15 @@ article {
 
   .project-body {
     flex-direction: row;
+    /* align-items: center; */
   }
 
   .project-info {
     order: 1;
+  }
+
+  .project-info h3 {
+    margin-top: 0;
   }
 
   .project-image {

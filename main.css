@@ -125,6 +125,8 @@ body {
   width: 100%;
   aspect-ratio: 1/1;
   border: 2px solid hsla(278, 82%, 87%, 0.2);
+  border-radius: 2%;
+  overflow: hidden;
 }
 
 .project-info p {

@@ -1,3 +1,8 @@
+/* TO-DO: 
+- Reorganise/refactor this code
+- Improve Lighthouse score
+*/
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -117,17 +122,13 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: var(--small-spacing);
-}
-
-.projects > .centered {
-  margin-bottom: var(--med-spacing);
+  gap: var(--sm-spacing);
 }
 
 .project-body {
   display: flex;
   flex-direction: column;
-  gap: var(--med-spacing);
+  gap: var(--small-spacing);
 }
 
 .project-image {
@@ -139,7 +140,7 @@ body {
 }
 
 .project-info p {
-  max-width: 60ch;
+  max-width: 80ch;
 }
 
 .project-info > h3 > span {
@@ -240,6 +241,7 @@ p.centered {
 .link-container-desktop a {
   font-weight: 700;
   text-decoration-color: var(--mauve);
+  text-decoration-thickness: 2px;
 }
 
 .link-container-desktop {
@@ -334,6 +336,7 @@ article {
 .link-container {
   display: flex;
   gap: var(--small-spacing);
+  align-self: center;
 }
 
 .subtitle {
@@ -372,8 +375,13 @@ article {
     width: 20%;
   }
 
+  .projects > .centered {
+    margin-bottom: var(--med-spacing);
+  }
+
   .project-body {
     flex-direction: row;
+    gap: var(--med-spacing);
   }
 
   .project-info {
@@ -426,5 +434,9 @@ article {
   .project-image {
     width: 60%;
     aspect-ratio: 16/9;
+  }
+
+  .project-info p {
+    max-width: 60ch;
   }
 }
